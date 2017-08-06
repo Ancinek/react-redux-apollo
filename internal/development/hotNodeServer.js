@@ -28,7 +28,7 @@ class HotNodeServer {
         title: name,
         level: 'info',
         message: 'Server running with latest changes.',
-        notify: true,
+        notify: false,
       });
 
       newServer.stdout.on('data', data => console.log(data.toString().trim()));

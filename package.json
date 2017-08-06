@@ -96,6 +96,7 @@
     "recompose": "^0.24.0",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
+    "redux-pack": "^0.1.5",
     "redux-thunk": "^2.2.0",
     "serialize-javascript": "1.4.0",
     "uuid": "3.1.0"

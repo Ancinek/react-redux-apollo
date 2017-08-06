@@ -7,7 +7,7 @@ import Helmet from 'react-helmet';
 
 import config from '../../../config';
 
-import './globals.css';
+import './globals.scss';
 
 import Error404 from './Error404';
 import Header from './Header';
@@ -18,7 +18,7 @@ import AsyncAboutRoute from './AsyncAboutRoute';
 
 function App() {
   return (
-    <div style={{ padding: '2rem' }}>
+    <div>
       <Helmet>
         <html lang="en" />
         <title>{config('htmlPage.defaultTitle')}</title>
@@ -106,13 +106,9 @@ function App() {
           rel="stylesheet"
           href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
         />
-        <link
-          rel="stylesheet"
-          href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css"
-        />
       </Helmet>
       <Header />
-      <div style={{ paddingTop: '2rem', paddingBottom: '2rem' }}>
+      <div>
         <Switch>
           <Route exact path="/" component={AsyncHomeRoute} />
           <Route path="/counter" component={AsyncCounterRoute} />

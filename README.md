@@ -12,8 +12,7 @@ git clone https://github.com/Ancinek/react-redux-apollo-boilerplate.git my-proje
 cd my-project
 yarn
 mongod // Run the mongoDB (needed for the API server)
-yarn run develop // Run the main server
-yarn run develop:api // Run the API server
+yarn run develop // Run the server
 // or just simply run:
-foreman start -f Procfile.dev (starts mongoDB, client server and api server)
+foreman start -f Procfile.dev (starts mongoDB and the server)
 ```

@@ -1,17 +1,18 @@
+import { Link } from 'react-router-dom';
 import React from 'react';
 import Logo from './Logo';
-import Menu from './Menu';
 
 function Header() {
   return (
-    <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
-      <Logo />
-      <h1>React, Universally</h1>
-      <strong>
-        A starter kit for universal react applications.
-      </strong>
-      <Menu />
-    </div>
+    <header className="navigation">
+      <nav>
+        <Logo />
+        <ul className="nav-list right">
+          <li className="nav-item"><Link to="/about">About us</Link></li>
+          <li className="nav-item"><Link to="/counter">Counter</Link></li>
+        </ul>
+      </nav>
+    </header>
   );
 }
 
